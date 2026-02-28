@@ -101,6 +101,7 @@ jupyter notebook notebooks/Intellitrace_SVM_Prototype.ipynb
 ---
 
 # Folder Structure
+```text
 root/
 │
 ├── README.md
@@ -110,6 +111,7 @@ root/
 │
 └── notebooks/
     └── Intellitrace_SVM_Prototype.ipynb
+```
 
 ---
 
