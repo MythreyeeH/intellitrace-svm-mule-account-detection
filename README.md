@@ -50,15 +50,13 @@ Top-k high-risk neighbors are selected per relation to prevent camouflage diluti
 
 ### 3. Temporal Decay Weighting
 
-\( w_e = \exp\left(-\frac{\Delta t}{\tau}\right) \)
+w_e = exp(-Δt / τ)
 
 Edge messages are weighted using time decay to prioritize recent high-velocity activity.
 
 ### 4. Edge-to-Account Risk Aggregation
 
-\[
-\text{risk}(a) = \sum_{e \in \mathcal{E}(a)} w_e \, p_e
-\]
+risk(a) = Σ w_e * p_e
 
 Transaction-level fraud probabilities are aggregated into account-level risk scores.  
 Accounts exceeding a defined threshold are flagged as mule candidates.
